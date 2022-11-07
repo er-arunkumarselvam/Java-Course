@@ -7,7 +7,9 @@ public class LoopingProgram10_12 {
 		lp.reverseNumber(1234);
 		lp.countOfDigit(65432);
 		lp.sumOfDigits(123456789);
+		//lp.armStrongNumber(153);
 	}
+
 
 	private void sumOfDigits(int no) {
 		// Sum of digits

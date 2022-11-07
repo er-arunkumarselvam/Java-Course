@@ -8,8 +8,10 @@ public class LoopingProgram7_9_18 {
 //		lp.countDivisor(10);
 //		lp.additionOfN(0);
 		lp.primeNumberOrNot(17);
+		
 
 	}
+	
 
 	private void primeNumberOrNot(int no) {
 		// The given number is a prime number or not a prime number
