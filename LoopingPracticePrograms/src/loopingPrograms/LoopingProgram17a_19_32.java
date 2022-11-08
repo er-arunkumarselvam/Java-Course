@@ -4,36 +4,16 @@ public class LoopingProgram17a_19_32 {
 
 	public static void main(String[] args) {
 		LoopingProgram17a_19_32 lp = new LoopingProgram17a_19_32();
-//		lp.strongNumber(145);
-//		lp.factorial(5);
-//		lp.printFactorial(5);
-//		lp.neonNumber(12);
-		lp.armStrongNumber(153);
+		lp.strongNumber(145);
+		lp.factorial(5);
+		lp.printFactorial(5);
+
 //		lp.printNumberSeries(10,8);
 //		lp.findSquareRoot(9,2);
 	}
 
 
-	private void armStrongNumber(int no) {
-		// Armstrong Number
-		int no2=no;
-		int count=0;
-		while(no>0)
-		{
-		int rem = no%10;
-		int result = rem*rem*rem;
-		count =count+result;
-		no=no/10;
-		}
-		if(count==no2)
-		{
-			System.out.println("The given number is Armstrong Number.");
-		}
-		else
-		{
-			System.out.println("The given number is Not Armstrong Number.");
-		}
-	}
+	
 
 
 	private void findSquareRoot(int no, int div) {
@@ -62,28 +42,7 @@ public class LoopingProgram17a_19_32 {
 	}
 
 
-	private void neonNumber(int no) {
-		// Neon Number - sum of digits of square of the number equal to given number.
-		// 9 = 9*9 = 81 => 8 + 1 = 9 (neon number)
-		int ans = no * no;
-		int sum = 0;
-		while(ans!=0)
-		{
-			int rem = ans%10;
-			sum = sum+rem;
-			ans = ans/10;
-		}
-		System.out.println(sum);
-		if(sum==no)
-		{
-			System.out.println("Neon Number");
-		}
-		else
-		{
-			System.out.println("Not Neon Number");
-		}
-		
-	}
+	
 
 	private void printFactorial(int max) {
 		// Print solution of 5! 4! 3! 2! 1! each factorial value
