@@ -7,14 +7,28 @@ public class LoopingProgram17a_19_32 {
 		lp.strongNumber(145);
 		lp.factorial(5);
 		lp.printFactorial(5);
+//		lp.find_binary(6);
 
 //		lp.printNumberSeries(10,8);
 //		lp.findSquareRoot(9,2);
+		
 	}
 
 
 	
-
+	private void find_binary(int decimal ) {
+		// TODO Auto-generated method stub
+		
+		String binary = ""; 
+		while(decimal>0)
+		{
+		int rem = decimal%2; //6%2 3%2  1%2
+		binary = rem + binary; //0 + "" => 1+ "0" => "10" => 1+"10" -> 110
+		decimal = decimal / 2;// decimal = 1
+		}
+		System.out.println("Binary is " + binary); 
+		
+	} 
 
 	private void findSquareRoot(int no, int div) {
 		// Square Root of Given Number
