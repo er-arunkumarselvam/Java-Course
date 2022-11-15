@@ -14,18 +14,19 @@ public class LoopingProgram33_37 {
 		//lp.addSeries(1,0);
 		//lp.tableSeries(1,10);
 		//lp.table_series(1,1);
-		lp.printSeries(10);
+		lp.printSeries(10,8);
 		
 		
 	}
 	
-	private void printSeries(int no1) {
+	private void printSeries(int no1, int no2) {
 		// print series 10 18 24 28 30
-		int rem=0;
-		int no2=no1-2;
-		while(rem<=30)
+		
+		while(no2>=0)
 		{
-			
+			System.out.println(no1+" ");
+			no1=no1+no2;
+			no2=no2-2;
 			
 		}
 		
