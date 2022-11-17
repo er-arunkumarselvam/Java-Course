@@ -12,8 +12,20 @@ public class LoopingProgram22_29 {
 		//lp.swappingNumbers(5,10);
 		//lp.oddOrEven(123456);
 		//lp.lcm(3,10);
-		lp.withoutModulo(3);
+		//lp.withoutModulo(3);
+		lp.findDecimalToBinary(12," ");
 
+	}
+	private void findDecimalToBinary(int decimal, String binary) {
+		// Find Decimal to Binary Value (6) - Binary ?
+		while(decimal>0)
+		{
+			int rem=decimal%2;
+			binary=rem+binary;
+			decimal/=2;
+		}
+		System.out.println(binary);
+		
 	}
 	private void withoutModulo(int no) {
 		// Number is multiple of 3 without using / and % operators

@@ -5,15 +5,24 @@ public class LoopingTestProgram {
 	public static void main(String[] args) {
 
 		LoopingTestProgram lp = new LoopingTestProgram();
-		//lp.fibonacci(0, 1);
-		lp.fibonacciPrime(0);
-		
+		// lp.fibonacci(0, 1);
+		// lp.fibonacciPrime(0);
+		lp.fibonacciSeries(0, 1);
 
 	}
-	
 
-	
+	private void fibonacciSeries(int no1, int no2) {
+		// Fibonacci Series - without using third variable
+		while (no1 <= 8) {
+			System.out.print(no1 + " ");//0 1 1
 
+			no2 = no1 + no2;// 1+1=2
+
+			no1 = no2 - no1;// 2-1=1
+
+		}
+
+	}
 
 	private int fibonacciPrime(int no) {
 		// Prime Number in Fibonacci Series

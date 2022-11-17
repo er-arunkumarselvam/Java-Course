@@ -7,8 +7,70 @@ public class PatternPrograms {
 		PatternPrograms pp=new PatternPrograms();
 		//pp.print1_5();
 		//pp.print1_1();
-		pp.printLast5();
+		//pp.printLast5();
+		//pp.print1();
+		//pp.print6();
+		//pp.print7();
+		pp.print8();
+		
+		
 	}
+	
+
+	private void print8() {
+		// TODO Auto-generated method stub
+		for(int row=5;row>=1;row--)
+		{
+		for(int num= 1 ;num<=row   ;num++ )
+		{
+		System.out.print(num+" ");
+		}
+		System.out.println();
+		}
+		
+	}
+
+
+	private void print7() {
+		// TODO Auto-generated method stub
+		for(int row=1;row<=5;row++)
+		{
+			for(int num=5;num>=6-row;num--)
+			{
+				System.out.print(num+" ");
+			}
+			System.out.println();
+		}
+	}
+
+
+	private void print6() {
+		// TODO Auto-generated method stub
+		for(int row=1;row<=5;row++)
+		{
+			for(int num=1;num<=row;num++)
+			{
+				System.out.print(num+" ");
+			}
+			System.out.println();
+		}
+	}
+
+
+	private void print1() {
+		// TODO Auto-generated method stub
+		for(int row= 5;row>=0;row--)
+		{
+		for(int num= 5;num>=6-row;num--)
+		{
+		System.out.print(num+" ");
+		}
+
+		System.out.println();
+		} 
+	
+	}
+
 
 	private void printLast5() {
 		// Print Pattern Program
