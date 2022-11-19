@@ -1,0 +1,48 @@
+Array Programs: 
+1) Array Declaration 
+2) Printing Array
+3) Printing in reverse order
+4) Linear Search
+5) Finding index of given number
+6) Removing given number from an array
+7) Placing given number in last index of given array
+8) how many times a given element is present
+9) Finding biggest no. in given array
+10) Finding smallest no. in given array
+11) Finding first two biggest numbers in a given array
+12) Finding first two smallest numbers in a given array
+13) Finding count of duplicate elements in a given array
+14) Finding addition of odd index numbers in a given array
+15) Moving all elements towards left in a given array
+16) Moving all elements towards left twice in a given array
+17) Moving all elements towards right in a given array
+18) Moving all elements towards right twice in a given array
+19) Copying the given array to another array in reverse order
+20) Addition of two integer arrays
+21) Finding only negative numbers in given array
+22) Copying only the negative numbers in given array - to another array
+23) Copying only the odd indexed numbers in given array - to another array 
+24) Printing values between adjacent two elements in a given array
+25) Removing all the duplicate elements in a given array
+
+Array Programs
+
+1. Program to find first repeated element in an array 
+
+2. Program to find first non repeated element in an array 
+
+3. Sum of 2 elements in a single array corresponding to 10 
+
+4. Divide all the elements in an array by 3 and store it in the same array 
+
+5. Multiply any two elements in an array and check if it corresponds to 20
+
+6. Split an array- one to store only odd numbers and another to store only even numbers 
+
+7. Check if any elements in an array are prime numbers
+
+8. Check if any elements in an array are perfect numbers 
+
+9. Print odd elements present in even index of an array 
+
+10. Print even elements present in odd index of any array
