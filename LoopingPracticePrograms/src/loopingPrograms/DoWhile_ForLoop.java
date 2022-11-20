@@ -10,6 +10,7 @@ public class DoWhile_ForLoop {
 //		lp.for_Loop2(1);
 //		lp.for_Loop3(5);
 		lp.for_Loop4();
+		
 	}
 
 	private void for_Loop4() {
