@@ -29,19 +29,454 @@ public class PatternPrograms {
 //		pp.pattern22();
 //		pp.pattern23();
 //		pp.pattern24();
-		pp.pattern25();
+//		pp.pattern25();
+//		pp.pattern26();
+//		pp.pattern27();
+//		pp.pattern28();
+//		pp.pattern29();
+//		pp.pattern30();
+//		pp.pattern31();
+//		pp.pattern32();
+//		pp.pattern33();
+//		pp.pattern34();
+//		pp.pattern35();
+//		pp.pattern36();
+//		pp.pattern37();
+//		pp.pattern38();
+//		pp.pattern39();
+//		pp.pattern40();
+//		pp.pattern41();
+//		pp.pattern42();
+//		pp.pattern43();
+		pp.pattern44();
 		
 		
+	
+	}
+
+
+	private void pattern44() {
+//		 	*
+//		   ***
+//		  *****
+//		 *******
+//		*********
+//		 *******
+//		  *****
+//		   ***
+//		    *
+		for (int row = 1; row <= 5; row++) {
+			for (int col = 5; col > row; col--) {
+				System.out.print(" ");
+			}
+			for (int num = 1; num <= (row * 2) - 1; num++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		for (int row = 4; row >= 1; row--) {
+			for (int col = 5 - 1; col >= row; col--) {
+				System.out.print(" ");
+			}
+			for (int num = 1; num <= (row * 2) - 1; num++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+	}
+
+
+	private void pattern43() {
+//				  1
+//	          #   #
+//	      3   3   3
+//	  #   #   #   #
+//5   5   5   5   5
+		for(int row=1;row<=5;row++)
+		{
+		for(int num=1;num<=5-row;num++)
+		{
+		System.out.print(" "+" ");
+		}
+		for(int col=row;col>0;col--)
+		{
+			if(row%2==0)
+				System.out.print("#"+" ");
+			else
+		System.out.print(row+" ");
+		}
+		System.out.println();
+		}
+		
+	}
+
+
+	private void pattern42() {
+		int line=8;
+		for(int row=0;row<=line;row++)
+		{
+			int check = row<=line/2?row:line-row+1;// row>4- row = line-row+1
+		for(int num=0;num<check;num++)
+		{
+			if(num%2==1)
+				System.out.print("#");
+			else		
+			System.out.print(row);
+
+		}
+		System.out.println();
+		}
+		
+	}
+
+	private void pattern41() {
+//		   	A 
+//		   A B 
+//		  A B C 
+//		 A B C D 
+//		A B C D E
+		int alpha=65;
+		for(int row=1;row<=5;row++)
+		{
+			for(int col=1;col<=5-row;col++)
+			{
+			System.out.print(" "+"");//one space
+			}	
+		for(int num=0;num<=row-1;num++) // num start with 0 to 5
+		{
+		System.out.print((char)(alpha+num)+" "); // Using Type Casting (char) (ASCII Value + Number) (int)
+		}
+		System.out.println();
+		}
+		
+	}
+
+	private void pattern40() {
+//        1   
+//      1   2   
+//    1   2   3   
+//  1   2   3   4   
+//1   2   3   4   5   
+		for(int row=1;row<=5;row++)
+		{
+		for(int num=1;num<=5-row;num++)
+		{
+		System.out.print(" "+" ");// One Space
+		}
+		for(int col=1;col<=row;col++)
+		{
+		System.out.print(col+"   ");//three Space
+		}
+		System.out.println();
+		}
+		
+	}
+
+	private void pattern39() {
+//		A
+//	    B   B
+//	    C   C   C
+//	    D   D   D   D
+//	    E   E   E   E   E
+		int alpha=65;// ASCII value start for A - Z is 65-91.
+		for(int row=0;row<=4;row++) // start row from 0 -4 
+		{
+		for(int num=0;num<=row;num++) // num start with 0 to row-1
+		{
+		System.out.print((char)(alpha+row)+" "); // Using Type Casting (char) (ASCII Value + row) (int)
+		}
+		System.out.println();
+		}
+	}
+
+	private void pattern38() {
+//		A
+//	    A   B
+//	    A   B   C
+//	    A   B   C   D
+//	    A   B   C   D   E
+		int alpha=65;// ASCII value start for A - Z is 65-91.
+		for(int row=1;row<=5;row++)
+		{
+		for(int num=0;num<=row-1;num++) // num start with 0 to 5
+		{
+		System.out.print((char)(alpha+num)+" "); // Using Type Casting (char) (ASCII Value + Number) (int)
+		}
+		System.out.println();
+		}
+		
+	}
+
+	private void pattern37() {
+//			*   
+//	      *   *   
+//	    *   *   *   
+//	  *   *   *   *   
+//	*   *   *   *   *   
+//	  *   *   *   *   
+//	    *   *   *   
+//	      *   *   
+//	        *   
+		
+		for(int row=1;row<=5;row++)
+		{
+		for(int num=1;num<=5-row;num++)
+		{
+		System.out.print(" "+" ");
+		}
+		for(int col=row;col>0;col--)
+		{
+		System.out.print("*"+"   ");
+		}
+		System.out.println();
+		}
+		
+		for(int row=2;row<=5;row++) // Start with row =2 to 5
+		{
+			
+			for(int num=1;num<=row-1;num++)
+			{
+				System.out.print(" "+" ");
+			}
+			for(int col=6-row;col>=1;col--)
+			{
+			System.out.print("*"+"   ");//Three Space
+			}
+			System.out.println();
+		}
+		
+	}
+
+	private void pattern36() {
+//		*   *   *   *   *   
+//		  *   *   *   *   
+//		    *   *   *   
+//		      *   *   
+//		        * 
+		for(int row=1;row<=5;row++)
+		{
+			for(int num=1;num<=row-1;num++)
+			{
+				System.out.print(" "+" ");
+			}
+			for(int col=6-row;col>=1;col--)
+			{
+			System.out.print("*"+"   ");//Three Space
+			}
+			System.out.println();
+		}
+	}
+
+	private void pattern35() {
+//		*   *   *   *   *
+//	        *   *   *   *
+//	            *   *   *
+//	                *   *
+//	                    *
+		for(int row=1;row<=5;row++)
+		{
+			for(int num=1;num<=row-1;num++)
+			{
+				System.out.print(" "+" ");
+			}
+			for(int col=6-row;col>=1;col--)
+			{
+			System.out.print("*"+" ");
+			}
+			System.out.println();
+		}
+	}
+
+	private void pattern34() {
+//		 5   4   3   2   1
+//		 	 4   3   2   1
+//	             3   2   1
+//	                 2   1
+//	                     1
+		for(int row=1;row<=5;row++)
+		{
+			for(int num=1;num<=row-1;num++)
+			{
+				System.out.print(" "+" ");
+			}
+			for(int col=6-row;col>=1;col--)
+			{
+			System.out.print(col+" ");
+			}
+			System.out.println();
+		}
+		
+	}
+
+	private void pattern33() {
+//		5   4   3   2   1
+//	        5   4   3   2
+//	            5   4   3
+//	                5   4
+//	                    5
+		for(int row=1;row<=5;row++)
+		{
+			for(int num=1;num<=row-1;num++)
+			{
+				System.out.print(" "+" ");
+			}
+			for(int col=5;col>=row;col--)
+			{
+			System.out.print(col+" ");
+			}
+			System.out.println();
+		}
+	}
+
+	private void pattern32() {
+//		 1   1   1   1   1
+//	         2   2   2   2
+//	             3   3   3
+//	                 4   4
+//	                     1
+		for(int row=1;row<=5;row++)
+		{
+			for(int num=1;num<=row-1;num++)
+			{
+				System.out.print(" "+" ");
+			}
+			for(int col=1;col<=6-row;col++)
+			{
+			System.out.print(row+" ");
+			}
+			System.out.println();
+		}
+	}
+
+	private void pattern31() {
+//		1   2   3   4   5
+//        	1   2   3   4
+//            	1   2   3
+//                	1   2
+//                    	1
+		for(int row=1;row<=5;row++)
+		{
+			for(int num=1;num<=row-1;num++)
+			{
+				System.out.print(" "+" ");
+			}
+			for(int col=1;col<=6-row;col++)
+			{
+			System.out.print(col+" ");
+			}
+			System.out.println();
+		}
+	}
+
+	private void pattern30() {
+//		1   2   3   4   5
+//	    1   1   2   3   4 
+//	    1   2   1   2   3
+//	    1   2   3   1   2
+//	    1   2   3   4   1
+		for(int row=1;row<=5;row++)
+		{
+			for(int num=1;num<=row-1;num++)
+			{
+				System.out.print(num+" ");
+			}
+			for(int col=1;col<=6-row;col++)
+			{
+			System.out.print(col+" ");
+			}
+			System.out.println();
+		}
+		
+	}
+
+	private void pattern29() {
+//		1   
+//	    1   1   2
+//	    1   2   1   2   3
+//	    1   2   3   1   2   3   4
+//	    1   2   3   4   1   2   3   4   5
+		for(int row=1;row<=5;row++)
+		{
+			for(int num=1;num<=row-1;num++)
+			{
+				System.out.print(num+" ");
+			}
+			for(int col=1;col<=row;col++)
+			{
+			System.out.print(col+" ");
+			}
+			System.out.println();
+		}
+		
+	}
+
+	private void pattern28() {
+//		1   2   3   4   5
+//	    1   1   2   3   4   5
+//	    1   2   1   2   3   4   5
+//	    1   2   3   1   2   3   4   5
+//	    1   2   3   4   1   2   3   4   5
+		for(int row=1;row<=5;row++)
+		{
+			for(int num=1;num<=row-1;num++)
+			{
+				System.out.print(num+" ");
+			}
+			for(int col=1;col<=5;col++)
+			{
+			System.out.print(col+" ");
+			}
+			System.out.println();
+		}
+		
+	}
+
+	private void pattern27() {
+//		1
+//	    1   1
+//	    1   2   1
+//	    1   2   3   1
+//	    1   2   3   4   1
+		for(int row=1;row<=5;row++)
+		{
+			for(int num=1;num<=row-1;num++)
+			{
+				System.out.print(num+" ");
+			}
+			System.out.print(1+" ");
+			System.out.println();
+		}
+		
+	}
+
+	private void pattern26() {
+		for(int row=1;row<=5;row++)
+		{
+			for(int num=1;num<=row-1;num++)
+			{
+				System.out.print(num+" ");
+			}
+			System.out.println();
+		}
 		
 	}
 
 	private void pattern25() {
+//		1
+//	    2   3
+//	    4   5   6
+//	    7   8   9   10
+//	    11  12  13  14  15
+		int temp=1;
 		for(int row=1;row<=5;row++)
 		{
 		for(int num=1;num<=row;num++)
 		{
-		System.out.print((num+row)+" ");
+		System.out.print(temp+" ");
+		temp++;
 		}
+		
 		System.out.println();
 		}
 		
