@@ -1,12 +1,8 @@
 package patternPrograms;
 
-public class PatternName {
-
-	public static void main(String[] args) {
-		
-		PatternName pp = new PatternName();
-//		pp.letterStar();
-//		pp.number8();
+class PrintPatternName {
+    public static void main(String[] args) {
+        PrintPatternName pp = new PrintPatternName();
 		pp.letterA();
 		pp.letterR();
 		pp.letterU();
@@ -16,11 +12,8 @@ public class PatternName {
 		pp.letterM();
 		pp.letterA();
 		pp.letterR();
-		
-	
-	}
-
-	private void letterK() {
+    }
+    private void letterK() {
 		for(int row=1;row<=7;row++)
 		{
 			for(int col=1;col<=7;col++)
@@ -141,51 +134,7 @@ public class PatternName {
 		
 	}
 
-	private void number8() {
-		for(int col=1;col<=6;col++) {
-			System.out.print("* ");
-		}
-		System.out.println();
-//		second attempt
-		for(int row=1;row<=7;row++)
-		{
-		if(row!=4) {
-			System.out.print("* ");
-			for(int space=1;space<=5;space++)
-			{
-				System.out.print("  ");
-			}
-			System.out.println("* ");
-		}
-			else
-			{
-				for(int col=1;col<=6;col++)
-				{
-					System.out.print("* ");
-				}
-				System.out.println();
-		}
-			
-			}
-		for(int col=1;col<=6;col++)
-		{
-			System.out.print("* ");
-		}
-		
-	}
-
-	private void letterStar() {
-		for(int row=1;row<=7;row++)
-		{
-			for(int col=1;col<=7;col++)
-			{
-				System.out.print("a"+" ");
-			}
-			System.out.println();
-		}
-		System.out.println();
-	}
-
+	
 	private void letterU() {
 		for(int col=1;col<=6;col++)
 		{
@@ -215,13 +164,4 @@ public class PatternName {
 		}
 		System.out.println();
 	}
-	
-		
 }
-
-		
-	
-
-	
-
-
