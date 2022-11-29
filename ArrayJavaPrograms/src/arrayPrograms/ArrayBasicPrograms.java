@@ -21,11 +21,48 @@ public class ArrayBasicPrograms {
 //		ap.linearSearchArray(ap.ar);
 //		ap.printEvenIndexOddNo(ap.ar);
 //		ap.printOddIndexEvenNo(ap.ar);
-		ap.printBiggestNo();
+//		ap.printBiggestNo();
+//		ap.printSmallestNo();
+		ap.printBiggestNoIndex();
+		
 		}
+	private void printBiggestNoIndex() {
+		//Print the Biggest Number with Index
+		int[] ar= {56,86,98,56,78};
+		int big=Integer.MIN_VALUE;//Find the Max value to assign MinValue
+		int ind=0;
+		for(int i=0;i<ar.length;i++)
+		{
+			if(big<ar[i]){//Compare the value
+				big=ar[i];// Store the value
+				ind=(i);
+			}
+				
+		}
+		System.out.println("The Biggest No. Of an array is : "+big+" .The Index or Position of Biggest No is : "+ind);
+	}
+	
+	private void printSmallestNo() {
+		// Find the Smallest Number of an Array
+		int[] ar= {56,86,98,45,78};
+		int small=Integer.MAX_VALUE;//Find the Min value to assign MaxValue
+		for(int i=0;i<ar.length;i++)
+		{
+			if(small>ar[i])//Compare the value
+				small=ar[i];// Store the value
+		}
+		System.out.println("The Biggest No. Of an array is : "+small);
+	}
 	private void printBiggestNo() {
 		// Find the Biggest Number of an Array
-		
+		int[] ar= {56,86,98,56,78};
+		int big=Integer.MIN_VALUE;//Find the Max value to assign MinValue
+		for(int i=0;i<ar.length;i++)
+		{
+			if(big<ar[i])//Compare the value
+				big=ar[i];// Store the value
+		}
+		System.out.println("The Biggest No. Of an array is : "+big);
 		
 	}
 	private void printOddIndexEvenNo(int[] ar2) {
