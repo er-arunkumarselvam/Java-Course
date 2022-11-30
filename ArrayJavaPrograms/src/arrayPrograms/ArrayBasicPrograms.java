@@ -23,9 +23,14 @@ public class ArrayBasicPrograms {
 //		ap.printOddIndexEvenNo(ap.ar);
 //		ap.printBiggestNo();
 //		ap.printSmallestNo();
-		ap.printBiggestNoIndex();
+//		ap.printBiggestNoIndex();
+		ap.find();
 		
 		}
+	private void find() {
+		// 
+		
+	}
 	private void printBiggestNoIndex() {
 		//Print the Biggest Number with Index
 		int[] ar= {56,86,98,56,78};
