@@ -48,8 +48,22 @@ public class PatternPrograms {
 //		pp.pattern41();
 //		pp.pattern42();
 //		pp.pattern43();
-		pp.pattern44();
+//		pp.pattern44();
+		pp.pattern45();
 
+	}
+
+	private void pattern45() {
+		for(int row=1;row<=5;row++)
+		{
+			int num=1;
+			for(int col=1;col<=row;col++) {
+				System.out.print(num+" ");
+				num+=2;
+			}
+			System.out.println();
+		}
+		
 	}
 
 	private void pattern44() {

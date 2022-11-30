@@ -44,6 +44,12 @@ public class LoopingProgram10_12 {
 	private void reverseNumber(int no) {
 		// Reverse Printing a number
 		System.out.println("The given no is "+no);
+		for(no=1234;no>0;no/=10)
+		{
+			int rem = no%10;
+			System.out.print(rem);
+			
+		}
 		while(no>0)
 		{
 			int rem = no%10;
